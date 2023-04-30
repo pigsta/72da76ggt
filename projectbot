@@ -1,11 +1,5 @@
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Pxsta72/ProjectBot/main/banChecker"))()
 
-local versionChcker = loadstring(game:HttpGet("https://raw.githubusercontent.com/Pxsta72/ProjectBot/main/versionChecker"))()
-
-versionChcker.version = "0.10_beta"
-versionChcker.checkVersion()
-
-
 if _G.loaded then
     game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("[epic bot] ".."bot already active, cannot load another", "All")
     return
