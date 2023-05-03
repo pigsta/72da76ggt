@@ -1,11 +1,3 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Pxsta72/ProjectBot/main/banChecker"))()
-
-local versionChcker = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Pxsta72/ProjectBot/main/versionChecker"))()
-
-versionChcker.version = "1.0 beta"
-versionChcker.checkVersion()
-
-
 if _G.loaded then
     game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer("[project bot] bot already active, cannot load another", "All")
     return
